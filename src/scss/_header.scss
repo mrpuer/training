@@ -1,5 +1,47 @@
+@import "vars";
+@import "menu";
+
 .header {
+  font-family: $fontRoboto;
   &__head {
-    background-color: #303030;
+    background-color: $headerHeadBg;
+  }
+
+  &__button {
+    float: right;
+    line-height: 36px;
+    background-color: $alterBgColor;
+    color: $headerTextButton;
+    font-size: 16px;
+    padding: 5px 20px 4px 50px;
+
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $headerTextLink;
+    line-height: 45px;
+
+    &--tel {
+      padding-left: 20px;
+      padding-right: 30px;
+    }
+
+    &--email {
+      padding-left: 24px;
+    }
+  }
+
+  &__body {
+    padding: 32px 0px 23px;
+  }
+
+  &__content-inner {
+    display: flex;
+    justify-content: space-between;
   }
 }
