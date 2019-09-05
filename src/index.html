@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+<header class="header">
+  <div class="header__head">
+    <div class="container">
+      <a href="#">+375 (29) 617-92-22</a>
+      <a href="#">vova@mytnik.net</a>
+      <a href="#">Бесплатная консультация</a>
+    </div>
+  </div>
+  <div class="header__body">
+    <div class="container">
+      <div class="header__logo">
+        <a href="#">
+          <img src="img/logo.src" alt="logo">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>Главная</li>
+          <li>О компании</li>
+          <li>Услуги</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
 </body>
 </html>
