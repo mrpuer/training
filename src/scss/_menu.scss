@@ -3,17 +3,24 @@
 .menu {
   &__item {
     display: inline-block;
-    font-size: 16px;
-    line-height: 36px;
-    border: 1px solid $alterBgColor;
-    padding-left: 17px;
-    padding-right: 17px;
-    a {
-      color: $headerLinkColor;
-    }
 
     & + & {
       padding-left: 10px;
     }
   }
+
+  &__link {
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: $headerLinkColor;
+    transition: .3s;
+
+    &:hover, &:active {
+      border-color: $alterBgColor;
+    }
+  }
+
 }

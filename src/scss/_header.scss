@@ -14,6 +14,15 @@
     color: $headerTextButton;
     font-size: 16px;
     padding: 5px 20px 4px 50px;
+    position: relative;
+    &::before {
+      content: "\f0b1";
+      font-family: 'icomoon', serif;
+      position: absolute;
+      left: 22px;
+      color: $headerTextButton;
+    }
+
 
     &::after {
       content: "";
@@ -29,10 +38,26 @@
     &--tel {
       padding-left: 20px;
       padding-right: 30px;
+      position: relative;
+      &::before {
+        content: "\f095";
+        font-family: 'icomoon', serif;
+        position: absolute;
+        left: 0;
+        color: $alterBgColor;
+      }
     }
 
     &--email {
       padding-left: 24px;
+      position: relative;
+      &::before {
+        content: "\f003";
+        font-family: 'icomoon', serif;
+        position: absolute;
+        left: 0;
+        color: $alterBgColor;
+      }
     }
   }
 

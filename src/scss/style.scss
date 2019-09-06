@@ -1,16 +1,10 @@
 @import "normalize.css";
 @import "vars";
+@import "fonts.css";
 @import "header";
 
 *{
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
 }
 
 a {
